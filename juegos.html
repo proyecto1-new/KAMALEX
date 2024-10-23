@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>KAMALEX</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/juegos2.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+       .service-item {
+        margin: 15px; /* Espaciado entre contenedores */
+    }
+    .owl-nav {
+        position: absolute;
+        top: calc(50% + 50px); /* Ajustar para bajar las flechas */
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+    .owl-nav .fas {
+        font-size: 30px; /* Tamaño de la flecha (ajustado) */
+        color: #F195B2; /* Color de la flecha */
+        cursor: pointer;
+        border-radius: 100%; /* Bordes redondeados */
+        padding: 24px; /* Espaciado interno (ajustado) */
+        line-height: 0; /* Eliminar espacio extra del botón */
+        margin: 0 10px; /* Espaciado entre las flechas */
+    }
+    .owl-carousel {
+        border: none; /* Eliminar borde del carrusel */
+        box-shadow: none; /* Eliminar sombra, si hay alguna */
+    }
+    .owl-carousel .owl-dots {
+        display: none; /* Ocultar los puntos de navegación */
+    }
+</style>
+</head>
+
+<body>
+   
+    <!-- Services End -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".service-carousel").owlCarousel({
+                items: 3,
+                loop: true,
+                autoplay: false,
+                autoplayTimeout: 10000,
+                autoplayHoverPause: false,
+                nav: true, // Mostrar flechas
+                navText: [
+                    "<i class='fas fa-arrow-left'></i>", // Flecha izquierda
+                    "<i class='fas fa-arrow-right'></i>" // Flecha derecha
+                ],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-primary py-3 d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <!-- Agregar el logo aquí -->
+                        <a href="index.html" class="text-white pr-3">
+                            <img src="img/Captura de pantalla (664).png" alt="Logo" style="height: 50px;">
+                        </a>
+                     
+                        <a class="text-white pl-3" href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
+                <a href="index.html" class="navbar-brand d-block d-lg-none">
+                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary">K</span>AMALEX</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active" style="color:rgb(31, 29, 29);" target="_blank">Inicio</a>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Meses
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <a class="dropdown-item" href="Enero.html" target="_blank">Enero</a>
+                                <a class="dropdown-item" href="Febrero.html" target="_blank">Febrero</a>
+                                <a class="dropdown-item" href="Marzo.html" target="_blank">Marzo</a>
+                                <a class="dropdown-item" href="Abril.html" target="_blank">Abril</a>
+                                <a class="dropdown-item" href="Mayo.html" target="_blank">Mayo</a>
+                                <a class="dropdown-item" href="Junio.html" target="_blank">Junio</a>
+                                <a class="dropdown-item" href="Julio.html" target="_blank">Julio</a>
+                                <a class="dropdown-item" href="Agosto.html" target="_blank">Agosto</a>
+                                <a class="dropdown-item" href="Septiembre.html" target="_blank">Septiembre</a>
+                                <a class="dropdown-item" href="Octubre.html" target="_blank">Octubre</a>
+                                <a class="dropdown-item" href="Noviembre.html" target="_blank">Noviembre</a>
+                                <a class="dropdown-item" href="Diciembre.html" target="_blank">Diciembre</a>
+                            </div>
+                        </div>
+                      
+                    </div>
+                    <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block" target="_blank">
+                            <h1 class="m-0 display-4 text-primary"><span class="text-secondary">K</span>AMALEX</h1>
+                    </a>
+                    <div class="navbar-nav mr-auto py-0">
+                        <a href="juegos.html" class="nav-item nav-link" target="_blank">Juegos</a>
+                        <a href="nosotras.html" class="nav-item nav-link" target="_blank">Nosotras</a>
+                       
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 90px; background-image: url('img/juegos.jpeg'); background-size: cover; background-position: center;">
+        <div class="container text-center py-5">
+            <h1 class="display-3 mt-lg-5" style="color: white; -webkit-text-stroke: 1px rgb(0, 0, 0);">Juegos</h1>
+            <div class="d-inline-flex align-items-center text-white">
+                <!-- Contenido adicional si es necesario -->
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Services Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row">
+               
+                <div class="col-lg-6">
+                    <h1 class="sectio5" style="margin-bottom: 70px;">Revisa tu aprendizaje</h1>
+
+                </div>
+                <div class="col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0"></div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel service-carousel" style=" border: 1.8px solid black;             background-color: #e7cda7; /* Fondo azulito bonito */
+">
+                        <div class="service-item" style=" border: 1.8px solid black;">
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5" id="enero1">
+                                <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Enero</h5>
+                                <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/es/embed/9450767abb0143f4b0fc4da73d853c10?themeId=2&templateId=10&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="service-item" style=" border: 1.8px solid black;">
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5"  id="enero2">
+                                <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Enero</h5>
+                                <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/es/embed/84baab4b27de4259bdd47f3b81a34799?themeId=1&templateId=3&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+                                
+                            </div>
+                        </div>
+                      
+                        <div class="service-item" style=" border: 1.8px solid black;" >
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5"  id="febrero1" >
+                                <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Febrero</h5>
+                                <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/es/embed/f15129beb6a8440bb3ae74c1041d4d8e?themeId=21&templateId=30&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="service-item" style=" border: 1.8px solid black;">
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5"  id="febrero2">
+                                <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Febrero</h5>
+                                <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="                                https://wordwall.net/es/embed/0ceef0dafde74b3aae15526177775745?themeId=21&templateId=30&fontStackId=0   " frameborder="0" allowfullscreen></iframe>
+                              
+                           
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="sectio5"></h1>
+                </div>
+                <div class="col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0"></div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel service-carousel" style=" border: 1.8px solid black;             background-color: #e7a7ce; /* Fondo azulito bonito */
+">                       
+                        <div class="service-item" style=" border: 1.8px solid black;">
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5"  id="marzo1">
+                                <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Marzo</h5>
+                                <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/es/embed/3355d93beea2456383d8376b8935cce8?themeId=1&templateId=8&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+                           
+                                
+                            </div>
+                        </div>
+                        <div class="service-item" style=" border: 1.8px solid black;">
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5"  id="marzo2">
+                                <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Marzo</h5>
+                                <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/es/embed/566b5e12752a453c89d57fe819259e6c?themeId=55&templateId=46&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+                        
+                                
+                            </div>
+                        </div>
+                        <div class="service-item" style=" border: 1.8px solid black;">
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5"  id="abril1">
+                                <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Abril</h5>
+                                <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/es/embed/b78e22cdfe524448b80276c18023070d?themeId=1&templateId=8&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+                                
+                            </div>
+                        </div>
+                        <div class="service-item" style=" border: 1.8px solid black;">
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5"  id="abril2">
+                                <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Abril</h5>
+                                <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/es/embed/6afd5c8083884274a4a590482239128d?themeId=1&templateId=46&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+                                
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial Start -->
+  
+
+ 
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="sectio5"></h1>
+            </div>
+            <div class="col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-12"><br><br>
+                <div class="owl-carousel service-carousel"   style=" border: 1.8px solid black;             background-color: #a7e7c1; /* Fondo azulito bonito */
+">
+
+<div class="service-item" style=" border: 1.8px solid black;">
+    <div class="position-relative text-center bg-light rounded p-4 pb-5"  id="mayo1">
+        <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Mayo</h5>
+        <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/es/embed/c14e343bdbad4116b5e8b2e816c34c6c?themeId=21&templateId=30&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+
+    
+    </div>
+</div>
+<div class="service-item" style=" border: 1.8px solid black;">
+    <div class="position-relative text-center bg-light rounded p-4 pb-5"  id="mayo2">
+        <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Mayo</h5>
+        <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/embed/04e428551c5940b889c2c49702d678d1?themeId=1&templateId=5&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+
+        
+    </div>
+</div>
+<div class="service-item" style=" border: 1.8px solid black;">
+    <div class="position-relative text-center bg-light rounded p-4 pb-5"  id="junio1">
+        <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Junio</h5>
+        <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/es/embed/dcd59828c48d4101b1ceb82da8522f46?themeId=21&templateId=69&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+
+        
+    </div>
+</div>
+<div class="service-item" style=" border: 1.8px solid black;">
+    <div class="position-relative text-center bg-light rounded p-4 pb-5"  id="junio2">
+        <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Junio</h5>
+        <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/embed/015d966398aa4d48b87df7c686c618ce?themeId=55&templateId=46&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+        
+    </div>
+</div>
+
+                        
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".service-carousel").owlCarousel({
+                items: 3,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 10000,
+                autoplayHoverPause: false,
+                nav: true, // Mostrar flechas
+                navText: [
+                    '<i class="fas fa-chevron-left"></i>', // Flecha izquierda
+                    '<i class="fas fa-chevron-right"></i>' // Flecha derecha
+                ],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+
+  
+ 
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="sectio5"></h1>
+                </div>
+                <div class="col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0"></div>
+            </div>
+            <div class="row">
+                <div class="col-12"><br>
+                    <div class="owl-carousel service-carousel"   style=" border: 1.8px solid black;             background-color: #afa7e7; /* Fondo azulito bonito */
+">
+                       
+                        <div class="service-item"  style=" border: 1.8px solid black;">
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5" id="julio1">
+                                <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Julio</h5>
+                                <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/es/embed/b43660b0d94043ff912c48fe2da76337?themeId=1&templateId=8&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+                                
+                            </div>
+                        </div>
+
+                        <div class="service-item"  style=" border: 1.8px solid black;">
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5"  id="julio2">
+                                <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Julio</h5>
+                                <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/embed/6d01ac8716f545d1b0559cbb15b57c00?themeId=1&templateId=5&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+                                
+                            </div>
+                        </div>
+                        <div class="service-item"  style=" border: 1.8px solid black;">
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5"  id="agosto1">
+                                <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Agosto</h5>
+                                <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/es/embed/361c4386f8374a2b93a67e29874bb76b?themeId=1&templateId=8&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+                                
+                            </div>
+                        </div>
+                        <div class="service-item"  style=" border: 1.8px solid black;">
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5"  id="agosto2">
+                                <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Agosto</h5>
+                                <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/embed/cd84fdee440e48fa85825d24a9a4894b?themeId=1&templateId=5&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+                                
+                            </div>
+                        </div>
+                      
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="sectio5"></h1>
+                </div>
+                <div class="col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0"></div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel service-carousel"  style=" border: 1.8px solid black;             background-color: #99ede2; /* Fondo azulito bonito */
+"> 
+                        <div class="service-item"  style=" border: 1.8px solid black;">
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5" id="septiembre1">
+                                <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Septiembre</h5>
+                                <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/es/embed/18656016fe014341a9331018fe414e7d?themeId=57&templateId=3&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+                                
+                            </div>
+                        </div>
+                        <div class="service-item"  style=" border: 1.8px solid black;">
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5"  id="septiembre2">
+                                <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Septiembre</h5>
+                                <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/es/embed/84baab4b27de4259bdd47f3b81a34799?themeId=1&templateId=3&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+                                
+                            </div>
+                        </div>
+
+                        <div class="service-item"  style=" border: 1.8px solid black;">
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5"  id="octubre1">
+                                <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Octubre</h5>
+                                <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/es/embed/e5b377f5542e429cba0e4ce6c49afc07?themeId=49&templateId=5&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+                                
+                            </div>
+                        </div>
+
+                        <div class="service-item"  style=" border: 1.8px solid black;">
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5" id="octubre2">
+                                <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Octubre</h5>
+                                <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/es/embed/103c228654c9467dbd6993bdee066dab?themeId=50&templateId=5&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+                                
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="sectio5"></h1>
+                </div>
+                <div class="col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0"></div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel service-carousel"  style=" border: 1.8px solid black;             background-color: #a7c7e7; /* Fondo azulito bonito */
+">
+                       
+
+
+                        <div class="service-item"  style=" border: 1.8px solid black;">
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5"  id="noviembre1">
+                                <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Noviembre</h5>
+                                <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/es/embed/33f52d2d4e774a65aa7242dd7463cc82?themeId=46&templateId=5&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="service-item"  style=" border: 1.8px solid black;">
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5"  id="noviembre2">
+                                <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Noviembre</h5>
+                                <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/es/embed/fdfb6dd49b704052bca0fde581692dd2?themeId=44&templateId=3&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+                                
+                            </div>
+                        </div>
+                        <div class="service-item"  style=" border: 1.8px solid black;">
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5" id="diciembre1">
+                                <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Diciembre</h5>
+                                <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/es/embed/f3664eb1ea1f40edaced2109442e8728?themeId=1&templateId=5&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+                                
+                            </div>
+                        </div>
+                        <div class="service-item"  style=" border: 1.8px solid black; ">
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5"  id="diciembre2">
+                                <h5 class="font-weight-semi-bold mt-3 mb-4 pt-3">Diciembre</h5>
+                                <iframe style="width: 100%; height: 500px; max-width: 1000px; margin: 0 auto;" src="https://wordwall.net/es/embed/3b3e8ac5fa134feda03d5f63280fecb8?themeId=21&templateId=30&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Services End -->
+
+
+    <!-- Testimonial Start -->
+    
+
+    <!-- Testimonial Start -->
+   
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-light py-5" style="margin-top: 90px;">
+        <div class="container text-center py-5">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <a href="index.html" class="navbar-brand m-0">
+                        <h1 class="m-0 mt-n2 display-4 text-primary"><span class="text-secondary">K</span>AMALEX</h1>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

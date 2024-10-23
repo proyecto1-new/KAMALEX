@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>KAMALEX</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/septiembre.css" rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="path/to/font-awesome.css"> <!-- Asegúrate de tener Font Awesome -->
+
+   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+   
+  
+    
+    <script>$(document).ready(function() {
+        $('#tabs ul li a').click(function(e) {
+          e.preventDefault();
+      
+          // Quitar clase 'active' de todas las pestañas
+          $('#tabs ul li a').removeClass('active');
+      
+          // Agregar clase 'active' a la pestaña seleccionada
+          $(this).addClass('active');
+      
+          // Ocultar todos los artículos y mostrar solo el correspondiente
+          $('.tabs-content article').removeClass('active');
+          var selectedTab = $(this).attr('href');
+          $(selectedTab).addClass('active');
+        });
+      
+        // Mostrar la primera pestaña y su contenido por defecto
+        $('#tabs ul li:first-child a').addClass('active');
+        $('.tabs-content article:first').addClass('active');
+      });</script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false, // Este es el cambio para ocultar los botones
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 1 },
+                    1000: { items: 1 }
+                }
+            });
+        });
+        </script>
+
+    <div class="container-fluid bg-primary py-3 d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <!-- Agregar el logo aquí -->
+                        <a href="index.html" class="text-white pr-3">
+                            <img src="img/Captura de pantalla (664).png" alt="Logo" style="height: 50px;">
+                        </a>
+                     
+                        <a class="text-white pl-3" href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
+                <a href="index.html" class="navbar-brand d-block d-lg-none">
+                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary">K</span>AMALEX</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link" target="_blank">Inicio</a>
+                                                <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Meses
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <a class="dropdown-item" href="Enero.html" target="_blank">Enero</a>
+                                <a class="dropdown-item" href="Febrero.html" target="_blank">Febrero</a>
+                                <a class="dropdown-item" href="Marzo.html" target="_blank">Marzo</a>
+                                <a class="dropdown-item" href="Abril.html" target="_blank">Abril</a>
+                                <a class="dropdown-item" href="Mayo.html" target="_blank">Mayo</a>
+                                <a class="dropdown-item" href="Junio.html" target="_blank">Junio</a>
+                                <a class="dropdown-item" href="Julio.html" target="_blank">Julio</a>
+                                <a class="dropdown-item" href="Agosto.html" target="_blank">Agosto</a>
+                                <a class="dropdown-item" href="Septiembre.html" target="_blank">Septiembre</a>
+                                <a class="dropdown-item" href="Octubre.html" target="_blank">Octubre</a>
+                                <a class="dropdown-item" href="Noviembre.html" target="_blank">Noviembre</a>
+                                <a class="dropdown-item" href="Diciembre.html" target="_blank">Diciembre</a>
+                            </div>
+                        </div>
+                      
+                    </div>
+                    <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block" target="_blank">
+                        <h1 class="m-0 display-4 text-primary"><span class="text-secondary">K</span>AMALEX</h1>
+                    </a>
+                    <div class="navbar-nav mr-auto py-0">
+                        <a href="juegos.html" class="nav-item nav-link" target="_blank">Juegos</a>
+                        <a href="nosotras.html" class="nav-item nav-link" target="_blank">Nosotras</a>
+                       
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 90px; background-image: url('img/septiembre\ fondo\ 3.jpg'); background-size: cover; background-position: center;">
+        <div class="container text-center py-5">
+            <h1 class="display-3 mt-lg-5" style="color: white; -webkit-text-stroke: 1px black;">Septiembre</h1>
+        </h1>
+            <div class="d-inline-flex align-items-center text-white">
+                <!-- Contenido adicional si es necesario -->
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    
+    <br><br><br>
+    <section class="service_section" style="position: relative; width: 100%; height: 1030px; overflow: hidden;">
+        <video autoplay muted loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+            <source src="img/4010339-uhd_4096_2160_25fps.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+       
+        <div class="overlay"></div> 
+       
+        <!-- Título centrado encima del video -->
+        <h6 class="custom-title text-uppercase custom-margin" style="letter-spacing: 5px; text-align: left; color: #dc16a4; padding-left: 5px; font-size: 1.8rem; margin-top: 100px; position: absolute; top: 0px; left: 140px; z-index: 1; text-shadow: 
+        -1px -1px 0 rgb(255, 255, 255),
+        1px -1px 0 rgb(255, 255, 255),
+        -1px 1px 0 rgb(255, 255, 255),
+        1px 1px 0 rgb(255, 255, 255);">
+        <strong>SEPTIEMBRE</strong> <br><br>
+    </h6>
+        <h1 class="titulo" style="position: relative; z-index: 1; color: white; text-align: center; margin-top: 120px;">
+            <span class="amor">Día del Amor</span> <br><span class="amistad">y la Amistad</span>
+        </h1>
+    
+        <div class="container" style="position: relative; z-index: 1; color: white; margin-top: 100px;">
+            <section class="features">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-12">
+                            <div class="features-post">
+                                <div class="features-content">
+                                    <div class="content-show">
+                                        <h4><i class="fa fa-pencil"></i>Origen</h4>
+                                    </div>
+                                    <div class="content-hide">
+                                        <p style="font-size:1.1rem; text-align: justify;">Está vinculado a la celebración de San Valentín, cuya historia es imprecisa. Según la leyenda, San Valentín fue un sacerdote que desobedeció la ley del emperador Claudio II, que prohibía el matrimonio a los soldados jóvenes. Fue Gelasio I quien, en el año 494 d.C., designó el 14 de febrero como el Día de los Enamorados, una fecha que se extendió a diferentes países a lo largo de los siglos y que coincide con la ejecución de San Valentín, martirizado por el Imperio Romano.</p>
+                                     
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="col-lg-4 col-12">
+                            <div class="features-post second-features">
+                                <div class="features-content">
+                                    <div class="content-show">
+                                        <h4></i>En Colombia</h4>
+                                    </div>
+                                    <div class="content-hide">
+                                        <p style="font-size:1.1rem; text-align: justify;" >En Colombia, el Día del Amor y la Amistad se celebra todos los años el tercer sábado del mes de septiembre, a diferencia de otros países de Latinoamérica. En 2024, el Día del Amor y la Amistad será el sábado 21 de septiembre. Es una conmemoración que busca exaltar la comprensión y el cariño que debemos tener unos con otros. Además, es una oportunidad para obsequiar a algún ser querido, ya sea un presente, una bendición o una palabra de aliento.</p>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="features-post third-features">
+                                <div class="features-content">
+                                    <div class="content-show">
+                                        <h4></i>¿Por qué se celebra en esa fecha?</h4>
+                                    </div>
+                                    <div class="content-hide">
+                                        <p style="font-size:1.1rem; text-align: justify;" >El inicio de esta festividad se remonta al año 1969. Antes de este momento, en nuestro país se conmemoraba el Día de San Valentín, también conocido como el Día de los Enamorados, el 14 de febrero. En 1969, se decidió trasladar la celebración al mes de septiembre por una estrategia comercial. A fin de espaciar los gastos que implicaba el inicio de la temporada escolar, se optó por mover la festividad a una fecha que fuese más rentable para la venta de regalo. </p>
+                                  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="button-container4">
+                        <a href="juegos.html#septiembre1"  target="_blank" class="custo-button">Juega aquí</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+<p><br><br></p>
+
+<script>
+   document.querySelectorAll('.features-post').forEach(post => {
+    post.addEventListener('mouseenter', function() {
+        // Muestra el contenido oculto al pasar el mouse
+        const contentHide = this.querySelector('.content-hide');
+        contentHide.style.maxHeight = "500px"; // Ajusta a un valor alto que cubra el contenido
+    });
+
+    post.addEventListener('mouseleave', function() {
+        // Oculta el contenido oculto al quitar el mouse
+        const contentHide = this.querySelector('.content-hide');
+        contentHide.style.maxHeight = "0"; // Restablece la altura máxima a 0
+    });
+});
+</script>
+
+  <br><br><br><br><br>
+
+
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Seleccionamos todos los elementos <li> que contienen los títulos de las pestañas
+      const tabs = document.querySelectorAll('#tabs ul li');
+      
+      // Iteramos sobre cada pestaña
+      tabs.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+          // Remover la clase 'active' de todos los títulos
+          tabs.forEach(t => t.querySelector('.tab-title').classList.remove('active'));
+          
+          // Agregar la clase 'active' al título de la pestaña que se hizo clic
+          tab.querySelector('.tab-title').classList.add('active');
+        });
+      });
+    });
+  </script>
+
+
+
+
+
+  <section class="service_section" style="background-color: rgba(22,34,57,0.99); width: 100%; height: 1200px; position: relative;">
+    <div class="container" style="position: relative; z-index: 1; color: white;">
+      <section class="section why-us" data-section="section2">
+        <br><br><br><br><br><br><br><br>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+                <h6 class="custom-title text-uppercase custom-margin" style="letter-spacing: 5px; text-align: left; color: #19ef20; padding-left: 5px; font-size: 1.5rem; text-shadow: 0
+              ;">
+                <strong>21 DE SEPTIEMBRE</strong> <br><br>
+            </h6>
+              <div class="section-heading">
+                <h2>Día Internacional de la Paz</h2>
+              </div>
+            </div>
+            <div class="col-md-12"><br><br>
+              <div id='tabs'>
+                <ul>
+                    <li>
+                        <span class="tab-title" style="font-size: 1.0em;">Cultura de Paz</span>
+                        <a href="#tabs-1" class="tab-link tab-1 selected active"></a>
+                    </li>
+                    <li>
+                        <span class="tab-title"  style="font-size: 1.0rem;">Conflictos internacionales</span>
+                        <a href="#tabs-2" class="tab-link tab-2"></a>
+                    </li>
+                    <li>
+                        <span class="tab-title"  style="font-size: 1.0rem;">Paz en Colombia</span>
+                        <a href="#tabs-3" class="tab-link tab-3"></a>
+                    </li>
+                </ul>
+                <section class='tabs-content'>
+                  <article id='tabs-1'> <br><br><br>
+                    <div class="row" style="position: relative;"> 
+                        <div class="col-md-6" style="position: relative;">
+                            <img src="img/paz1.webp" alt="Image 1" style="position: absolute; top: 25px; left: 0; z-index: 1; width: 350px; margin-top: 25px; height: 250px;">
+                            <img src="img/paz2.jpeg" alt="Image 2" style="position: absolute; top: px; left: 85px; z-index: 2; width: 370px; margin-top: -4px; height: 220px;">
+                            <img src="img/paz3.jpeg" alt="Image 3" style="position: absolute; top: 100px; left: 100px; z-index: 3; width: 370px; margin-top: -25px; height: 250px; margin-left: 15px;">
+                          </div>
+                      <div class="col-md-6">
+                        <h4  style="color: rgb(241, 236, 236);">¿Por qué se celebra este día?</h4> <br>
+                        <p style="color: rgb(241, 236, 236);  font-size: 1.1rem; text-align: justify;">Celebrado cada 21 de septiembre, es una jornada dedicada a promover la paz mundial y el cese de conflictos. Establecido por las Naciones Unidas, busca fortalecer los ideales de paz mediante la cooperación internacional, el diálogo y la educación. Este día adquiere especial importancia en un mundo afectado por tensiones geopolíticas, desinformación y crisis climáticas, que siguen avivando el odio y la violencia.</p>
+                     
+                        <div class="button-container">
+                            <a href="https://es.weforum.org/agenda/2024/09/que-es-el-dia-internacional-de-la-paz-y-por-que-es-importante/" class="bn"  target="_blank">Leer más</a>
+                        </div>
+                    
+                    </div>
+                      
+  
+
+                      
+                    </div>
+                  </article>
+                  <article id='tabs-2'><br><br><br>
+                    <div class="row" style="position: relative;">
+                        <div class="col-md-6" style="position: relative;">
+                            <img src="img/paz3.jpeg" alt="Image 1" style="position: absolute; top: 25px; left: 0; z-index: 1; width: 350px; margin-top: 25px; height: 250px;">
+                            <img src="img/paz1.webp" alt="Image 2" style="position: absolute; top: px; left: 85px; z-index: 2; width: 370px; margin-top: -4px; height: 220px;">
+                            <img src="img/paz2.jpeg" alt="Image 3" style="position: absolute; top: 100px; left: 100px; z-index: 3; width: 370px; margin-top: -25px; height: 250px; margin-left: 15px;">
+                          </div>
+                      <div class="col-md-6">
+                        <h4 style="color: rgb(241, 236, 236);">¿Cuáles son los principales conflictos internacionales?</h4><br>
+                        <p style="color: rgb(241, 236, 236);  font-size: 1.1rem; text-align: justify;">
+                            Los conflictos internacionales recientes incluyen la guerra entre Rusia y Ucrania, que ha desestabilizado Europa y generado crisis humanitarias y energéticas, y las tensiones entre Israel y Palestina, que siguen afectando la paz en Medio Oriente. Además, la creciente disputa entre China y Taiwán ha generado preocupación por una posible escalada militar en Asia, exacerbando las tensiones globales y poniendo en riesgo la estabilidad internacional.</p>
+                     
+                            <div class="button-container">
+                                <a href="https://www.bbc.com/mundo/noticias-internacional-60741745#:~:text=Conflictos%20como%20los%20de%20Yemen,%20Etiop%C3%ADa%20y%20Myanmar" class="bn"  target="_blank">Leer más</a>
+                            </div>
+                        
+                        </div>
+                    </div>
+                  </article>
+                  <article id='tabs-3'> <br><br><br>
+                    <div class="row" style="position: relative;">
+                        <div class="col-md-6" style="position: relative;">
+                          <img src="img/paz2.jpeg" alt="Image 1" style="position: absolute; top: 25px; left: 0; z-index: 1; width: 350px; margin-top: 25px; height: 250px;">
+                          <img src="img/paz3.jpeg" alt="Image 2" style="position: absolute; top: px; left: 85px; z-index: 2; width: 370px; margin-top: -4px; height: 220px;">
+                          <img src="img/paz1.webp" alt="Image 3" style="position: absolute; top: 100px; left: 100px; z-index: 3; width: 370px; margin-top: -25px; height: 250px; margin-left: 15px;">
+                        </div>
+                        <div class="col-md-6">
+                          <h4 style="color: rgb(241, 236, 236);">Importancia de la paz en contexto colombiano</h4><br>
+                          <p style="color: rgb(241, 236, 236); font-size: 1.1rem; text-align: justify;">
+                            En Colombia, el Día Internacional de la Paz tiene un significado especial, dado su reciente proceso de paz tras décadas de conflicto armado. Aunque se han logrado avances con la firma del Acuerdo de Paz en 2016, el país enfrenta aún grandes retos, como el cumplimiento de los acuerdos y la reintegración de excombatientes. La consolidación de una paz duradera en Colombia requiere no solo de la voluntad política, sino también de un esfuerzo conjunto de la sociedad civil y la comunidad internacional.
+                        </p>
+                          <div class="button-container">
+                            <a href="https://www.icrc.org/es/colombia-conflicto-armado-DIH-balance-humanitario#:~:text=En%202020,%20documentamos%20una%20desaparici%C3%B3n%20cada%20tres%20d%C3%ADas" class="bn"  target="_blank">Leer más</a>
+                        </div>
+                    
+                        </div>
+                      </div>
+                      
+                    
+                  </article>
+                  <div class="button-container5">
+                    <a href="juegos.html#septiembre2"  target="_blank"  class="custom-button">Juega aquí</a>
+                </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+
+
+
+  
+<br><br><br><br><br><br><br><br>
+
+
+
+  
+  <div class="container">
+    <div class="row">
+        <div class="col-md-8"> <!-- Columna para el texto, ajustada a 8 columnas -->
+            <div class="detail-box">
+                <div class="info-box">
+                    <div class="custom_heading-container">
+                        <h2>Dato Curioso</h2>
+                        <hr>
+                    </div>
+                    <p style="font-size: 1.2em; text-align: justify;">
+                        El 11 de septiembre es una fecha cargada de significados históricos. En 1624, se fundó Nueva Ámsterdam en la isla de Manhattan por colonos holandeses, que eventualmente se convertiría en la vibrante ciudad de Nueva York. Además, en 1958, este día marcó un hito en la aviación con el primer vuelo comercial del de Havilland Comet, el primer jet comercial, lo que revolucionó el transporte aéreo al hacerlo más rápido y accesible para el público. </p>
+                   
+<p  style="font-size: 1.2em; text-align: justify;">Sin embargo, el 11 de septiembre es más conocido por el ataque terrorista ocurrido en 2001, cuando aviones secuestrados impactaron las Torres Gemelas en Nueva York y el Pentágono en Washington D.C. Este trágico evento resultó en la muerte de casi 3,000 personas y tuvo un profundo impacto en la política y la sociedad global.</p>                   
+                        <div>
+                        <a href="https://diverlego.com/ciencia/20-datos-interesantes-sobre-septiembre/" target="_blank">Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4"> <!-- Columna para la imagen -->
+            <div class="text-center team mb-5">
+                <div class="position-relative overflow-hidden mb-4 image-container" style="margin-top: 90px;">
+                    <img class="img-fluid w-160 h-310" src="img/masturi.jpg" alt="Dios Juno">
+                </div>
+               
+            </div>
+        </div>
+    </div>
+      <!-- Sección de Dios Juno -->
+      
+      
+    </div>
+  </div>
+
+
+
+
+
+
+     <!-- Footer Start -->
+     <div class="container-fluid footer bg-light py-5" style="margin-top: 90px;">
+        <div class="container text-center py-5">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <a href="index.html" class="navbar-brand m-0">
+                        <h1 class="m-0 mt-n2 display-4 text-primary"><span class="text-secondary">K</span>AMALEX</h1>
+                    </a>
+                </div>
+               
+               
+                
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
