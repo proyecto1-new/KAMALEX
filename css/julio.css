@@ -1,0 +1,469 @@
+.info-popup {
+    display: none; /* Oculta los pop-ups inicialmente */
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #007bff;
+    background-color: #f8f9fa;
+}
+
+
+
+
+
+
+
+.button-custom {
+    background-color: #20dd20; /* Color de fondo brillante */
+    color: #ffffff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 25px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Permite el espaciado y el margen */
+    transition: background-color 0.3s, transform 0.3s; /* Animación suave */
+}
+
+.button-custom:hover {
+    background-color: #23b926; /* Color de fondo al pasar el ratón */
+    transform: scale(1.05); /* Aumento de tamaño al pasar el ratón */
+    color: #ffffff; /* Color del texto */
+}
+
+.mib {
+    display: flex; /* Para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para el contenedor del botón */
+.button-container2 {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco suave con algo de transparencia */
+    padding: 0px; /* Espacio interno para separar el botón de los bordes */
+    border-radius: 10px; /* Bordes redondeados para el contenedor */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+   height: 100px;
+}
+
+
+
+
+
+.neon-button1 {
+    top: 100%; /* Ajusta este valor para moverlo hacia abajo o arriba */
+    display: inline-block;
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    color: #ffffff; /* Color del texto */
+    background-color: #ff7332; /* Verde neón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transición suave para color, transformación y sombra */
+    box-shadow: 0 0 10px rgba(26, 202, 32, 0.862); /* Sombra de color verde neón */
+    margin-right: 200px; /* Ajusta este valor según sea necesario */
+    margin-top: 0px;
+    margin-left: 730px;
+    margin-bottom: 50px;
+  }
+  
+  .neon-button1:hover {
+    background-color: #52ff78; /* Cambia el color al pasar el mouse */
+    color: #000000; /* Color del texto */
+  }
+
+
+  
+
+.neon-button5 {
+    top: 100%; /* Ajusta este valor para moverlo hacia abajo o arriba */
+    display: inline-block;
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    color: #ffffff; /* Color del texto */
+    background-color: #ff329f; /* Verde neón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transición suave para color, transformación y sombra */
+    box-shadow: 0 0 10px rgba(26, 202, 32, 0.862); /* Sombra de color verde neón */
+    margin-right: 200px; /* Ajusta este valor según sea necesario */
+    margin-top: 25px;
+    margin-left: 710px;
+    margin-bottom: 50px;
+  }
+  
+  .neon-button5:hover {
+    background-color: #52ff78; /* Cambia el color al pasar el mouse */
+    color: #000000; /* Color del texto */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  .fa-star {
+    color: #2e49e3; /* Color rosa brillante */
+}
+
+.star-container {
+    display: flex; /* Utiliza flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si es necesario */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.centered-heading {
+    display: flex; /* Utiliza flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si es necesario */
+    text-align: center; /* Centra el texto */
+}
+
+
+
+
+
+
+  .post-carousel1 img {
+    border: 2px solid black; /* Borde negro */
+    border-radius: 15px; /* Bordes redondeados */
+    width: 120%; /* Ajusta según tus necesidades */
+    height: 220px; /* Altura constante */
+    object-fit: cover; /* Mantiene la relación de aspecto */
+}
+
+
+
+
+
+
+
+
+
+
+.post-carousel {
+    display: flex; /* Habilita flexbox en el contenedor */
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+}
+
+.post-item {
+    flex: 1; /* Hacer que todos los elementos hijos sean del mismo ancho */
+    display: flex; /* Flex para que los hijos se alineen */
+    flex-direction: column; /* Alinear los elementos en una columna */
+    height: 100%; /* Asegura que todos los contenedores llenen el espacio */
+    min-width: 300px; /* Ancho mínimo de los contenedores */
+    margin: 0 10px; /* Espacio entre los elementos */
+}
+
+.post-item .bg-primary {
+    flex: 1; /* Hace que el fondo ocupe todo el espacio disponible */
+    display: flex; /* Para alinear los elementos verticalmente */
+    flex-direction: column; /* Coloca los hijos en columna */
+    justify-content: space-between; /* Espacio entre elementos */
+    padding: 20px; /* Espaciado interno */
+    height: 610px; /* Asegura que el fondo ocupe toda la altura */
+}
+
+.text-white {
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+    display: flex; /* Para centrar el contenido */
+    align-items: flex-start; /* Alinea el texto al principio */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content-background {
+    background-color: #ffffff; /* Cambia el color según tu preferencia */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    border: 4px solid rgb(106, 89, 89); /* Borde negro */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button-custom1 {
+    background-color: #20dd20; /* Color de fondo brillante */
+    color: #ffffff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 25px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Permite el espaciado y el margen */
+    transition: background-color 0.3s, transform 0.3s; /* Animación suave */
+    margin-top: 50px;
+    margin-left: 520px;
+}
+
+.button-custom1:hover {
+    background-color: #23b926; /* Color de fondo al pasar el ratón */
+    transform: scale(1.05); /* Aumento de tamaño al pasar el ratón */
+    color: #ffffff; /* Color del texto */
+}
+
+.mib {
+    display: flex; /* Para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.titulo-virgen {
+    color: #20dd20; /* Color del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-img {
+    width: 100%; /* O el porcentaje que desees */
+    height: 200px; /* Mantiene la proporción */
+    max-width: 600px; /* Establece un ancho máximo */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para el borde brillante */
+.borde-brillante {
+    border: 3px solid #ff99cc; /* Borde rosado brillante */
+    padding: 15px;
+height: 500px;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo para el texto del h3 */
+.borde-brillante h3 {
+    color: rgb(254, 170, 170);
+    text-align: center;
+}
+
+/* Estilo para el párrafo */
+.borde-brillante p {
+    font-size: 1.1em;
+    color: white;
+    text-align: justify;
+    margin: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para el contenedor de la imagen */
+.img-box {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+
+    border-radius: 15px;
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+    transition: border 0.3s ease; /* Suaviza la transición del borde */
+}
+
+/* Oculta el checkbox */
+.toggle-checkbox {
+    display: none;
+}
+
+/* Estilo para la imagen */
+.image-label img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Transición suave en tamaño y borde */
+    border: 2px solid beige; /* Borde inicial beige */
+    border-radius: 15px; /* Borde redondeado de la imagen */
+}
+
+/* Cambia el borde cuando el mouse pasa sobre la imagen */
+.image-label img:hover {
+    border-color: pink; /* Cambia el borde a rosado al pasar el mouse */
+}
+
+/* Cambia el borde cuando el checkbox está marcado */
+.toggle-checkbox:checked + .image-label img {
+    transform: scale(1.3); /* Agranda la imagen en un 120% */
+    border-color: hotpink; /* Cambia el borde a rosa fuerte cuando está marcado */
+}
+
+

@@ -1,0 +1,320 @@
+.center-button {
+    display: flex;
+    justify-content: center;
+    margin-left: 115px;
+  }
+
+
+
+
+
+
+  .poetry-text {
+    font-size: 18px; /* Tamaño de la letra */
+  
+    line-height: 1.6; /* Espaciado entre líneas */
+    text-align: justify; /* Justifica el texto */
+    margin-left: 55px;
+}
+
+
+.btn {
+    color: black; /* Cambia el color de la letra a negro */
+}
+
+
+
+.down-content p {
+    color: #000; /* Texto negro */
+    text-align: justify; /* Justificación del texto */
+    font-size: 1.05em; /* Tamaño de letra más grande */
+    margin: 0 12px; /* Márgenes derecho e izquierdo */
+}
+
+
+
+
+
+
+
+
+
+
+
+.bio-background {
+    background-color: #f9f9f9; /* Color de fondo */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 0 0 10px 10px; /* Bordes redondeados solo en las esquinas inferiores */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
+    margin-top: 0px; /* Espacio superior para separar del contenido anterior */
+    height: 520px; /* Altura del contenedor */
+    border-left: 1px solid #000; /* Borde izquierdo */
+    border-right: 1px solid #000; /* Borde derecho */
+    border-bottom: 1px solid #000; /* Borde inferior */
+    border-top: 1px solid #000; /* Sin borde en la parte superior */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.play-button {
+    background-color: #10cf16; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 25px; /* Bordes más redondeados */
+    padding: 15px 30px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como un bloque en línea */
+    font-size: 18px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+    text-shadow: 
+    -1px -1px 0 rgb(0, 0, 0),
+    1px -1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(0, 0, 0),
+    1px 1px 0 rgb(0, 0, 0);
+    
+}
+
+/* Efecto al pasar el ratón */
+.play-button:hover {
+    background-color: #2f32f1; /* Color de fondo al pasar el ratón */
+    transform: translateY(-3px); /* Elevar ligeramente el botón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al pasar el ratón */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container7 {
+    display: flex; /* Activar Flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente si el contenedor tiene altura */
+    height: 0vh; /* Altura opcional para centrar verticalmente */
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.section-title {
+    display: flex; /* Activar Flexbox */
+    flex-direction: column; /* Colocar los elementos en una columna */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    height: 23vh; /* Altura del contenedor (puedes ajustar según sea necesario) */
+    text-align: center; /* Asegura que el texto también esté centrado */
+}
+
+.font-secondary {
+    margin: 0; /* Eliminar márgenes para mejor alineación */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.texto-modificado {
+    text-align: justify;   /* Justificar el texto */
+    font-size: 16px;       /* Tamaño de la letra */
+    margin: 20px;          /* Margen alrededor del texto */
+    line-height: 1.6;      /* Espaciado entre líneas */
+   margin-top: -0.5px;
+
+  }
+
+
+
+
+
+
+
+
+
+  .imagen-personalizada {
+    width: 350px;        /* Ancho de la imagen */
+    height: 260px;       /* Altura de la imagen */
+    transform: translateX(180px);  /* Mueve la imagen 180px hacia la derecha */
+    border: 2px solid black;  /* Borde negro */
+  }
+  
+  .imagen-personalizada1 {
+    width: 350px;        /* Ancho de la imagen */
+    height: 260px;       /* Altura de la imagen */
+    transform: translateX(34px);  /* Mueve la imagen 34px hacia la derecha */
+    border: 2px solid black;  /* Borde negro */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .container22 {
+    display: flex;
+    justify-content: space-between;  /* Alinea los botones a los extremos */
+    width: 100%;  /* Asegura que el contenedor ocupe todo el ancho */
+  }
+  
+  .boton-izquierda {
+    text-align: left;  /* Alinea el botón a la izquierda */
+    margin-left: 180px;
+  }
+  
+  .boton-derecha {
+    text-align: right;  /* Alinea el botón a la derecha */
+margin-right: 150px;
+  }
+  
+  .b4 {
+    padding: 10px 20px;
+    background-color: #914caf; /* Fondo verde */
+    color: white;  /* Texto blanco */
+    text-decoration: none;  /* Sin subrayado */
+    border-radius: 5px;  /* Bordes redondeados */
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;  /* Animación suave */
+  }
+  
+  .b4:hover {
+    background-color: #45a049; /* Cambia el color de fondo al pasar el mouse */
+    color: white;  /* Texto blanco */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+.play-button1 {
+    background-color: #10cf16; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 15px; /* Bordes más redondeados */
+    padding: 12px 25px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como un bloque en línea */
+    font-size: 17px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+    text-shadow: 
+    -1px -1px 0 rgb(0, 0, 0),
+    1px -1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(0, 0, 0),
+    1px 1px 0 rgb(0, 0, 0);
+    
+}
+
+/* Efecto al pasar el ratón */
+.play-button1:hover {
+    background-color: #2f32f1; /* Color de fondo al pasar el ratón */
+    transform: translateY(-3px); /* Elevar ligeramente el botón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al pasar el ratón */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container8 {
+    display: flex; /* Activar Flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente si el contenedor tiene altura */
+    height: 0vh; /* Altura opcional para centrar verticalmente */
+    margin-bottom: 15px;
+}
+
+
+
+

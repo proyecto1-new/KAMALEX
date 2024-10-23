@@ -1,0 +1,253 @@
+
+
+
+
+
+
+
+* Estilo para el contenedor de la imagen */
+.img-box {
+    display: inline-block;
+    position: relative;
+    cursor: pointer; /* Muestra el cursor de mano para indicar que es clickeable */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con un poco de transparencia */
+    border: 2px solid beige; /* Borde de color beige */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno */
+}
+
+/* Oculta el checkbox */
+.toggle-checkbox {
+    display: none; /* Oculta el checkbox */
+}
+
+/* Estilo para la imagen */
+.image-label img {
+    width: 80px; /* Mantiene el tamaño original de la imagen */
+    height: 80px; /* Mantiene el tamaño original de la imagen */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
+    transition: transform 0.3s ease; /* Suaviza la transición del cambio de tamaño */
+}
+
+/* Agranda la imagen cuando el checkbox está marcado */
+.toggle-checkbox:checked + .image-label img {
+    transform: scale(2.0); /* Agranda la imagen en un 150% */
+    z-index: 10; /* Asegura que la imagen se mantenga encima del contenido adyacente */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button-container {
+    display: flex;                       /* Utiliza flexbox para centrar el contenido */
+    justify-content: center;            /* Centra horizontalmente */
+    margin-top: 10px;                  /* Espacio superior opcional */
+}
+
+.bn {
+    display: inline-block;               /* Hace que el enlace se comporte como un botón */
+    padding: 10px 20px;                 /* Espaciado interno del botón */
+    border: 2px solid pink;             /* Borde rosado */
+    background-color: transparent;      /* Fondo transparente */
+    color: pink;                        /* Color de texto rosado */
+    text-decoration: none;               /* Quita el subrayado del enlace */
+    border-radius: 5px;                 /* Bordes redondeados */
+    transition: all 0.3s ease;          /* Transición suave para efectos */
+}
+
+.bn:hover {
+    background-color: pink;             /* Fondo rosado al pasar el mouse */
+    color: black;                        /* Texto negro al pasar el mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bordered-container {
+    border: 3px solid rgb(181, 115, 115);
+    padding: 10px 10px 5px; /* Cambia el padding inferior a 5px */
+    border-radius: 10px;
+   
+}
+
+.bordered-container p {
+    font-size: 17px;
+    color: rgb(216, 203, 203);
+    text-align: justify;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+.custom-button {
+    display: inline-block; /* Permite aplicar padding y border */
+    background-color: #007BFF; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    padding: 12px 24px; /* Espaciado interno */
+    border-radius: 8px; /* Esquinas redondeadas */
+    font-size: 18px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves para el cambio de color y transformación */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto de profundidad */
+}
+
+.custom-button:hover {
+    background-color: #94ff47; /* Color de fondo al pasar el ratón */
+    transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bordered-text {
+    text-shadow: 
+        -1px -1px 0px #4B0082,  /* Morado oscuro */
+        1px -1px 0px #4B0082,
+        -1px 1px 0px #4B0082,
+        1px 1px 0px #4B0082; /* Efecto de contorno */
+}
+
+
+
+
+
+.hover-effect {
+    border: 5px solid white; /* Borde blanco inicial */
+    transition: transform 0.3s, border-color 0.3s; /* Suaviza la transición */
+    position: relative; /* Asegura que el z-index funcione */
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+}
+
+.hover-effect:hover {
+    transform: scale(1.25) translateZ(0); /* Aumenta la escala para acercar más la imagen */
+    border-color: rgb(0, 255, 166); /* Cambia el color del borde a azul */
+    filter: brightness(1.2); /* Hace que la imagen brille */
+    box-shadow: 0 0 20px rgba(0, 255, 166, 0.5); /* Sombra brillante */
+    z-index: 10; /* Asegura que esté por encima de otros elementos al hacer hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+.mi-clase {
+    background-color: #e3187d; /* Color rosado claro */
+    color: white; /* Color del texto */
+    border: 2px solid #87CEFA; /* Borde azul claro */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px 20px; /* Relleno del botón */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s, border-color 0.3s; /* Transición suave para el color de fondo y del borde */
+}
+
+.mi-clase:hover {
+    background-color: #ff1493; /* Color rosado más oscuro al pasar el mouse */
+    border-color: #00BFFF; /* Cambia el color del borde a un azul más oscuro al pasar el mouse */
+}
+
+
+
+
+
+
+
+
+
+.button-container2 {
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si es necesario */
+    height: 9vh; /* Altura completa de la ventana para centrar verticalmente */
+}
+
+.miotherclass {
+    display: inline-block; /* Permite aplicar padding y border */
+    background-color: #b7eb0c; /* Color de fondo */
+    color: rgb(0, 0, 0); /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    padding: 12px 24px; /* Espaciado interno */
+    border-radius: 8px; /* Esquinas redondeadas */
+    font-size: 18px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves para el cambio de color y transformación */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto de profundidad */
+}
+.miotherclass:hover {
+    background-color: #ff6f91; /* Cambia el color al pasar el mouse */
+    transform: scale(1.05); /* Efecto de escalado al pasar el mouse */
+    color: rgb(0, 0, 0); /* Color del texto */
+}
+
+
+
+
+
+

@@ -1,0 +1,427 @@
+.big-rectangle {
+    width: 100%; /* O puedes definir un ancho específico, como 300px */
+    height: 200px; /* Define la altura deseada */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
+    position: relative; /* Permite el posicionamiento absoluto de la imagen */
+    border: 2px solid #000; /* (Opcional) Añade un borde para resaltar el rectángulo */
+    border-radius: 8px; /* (Opcional) Esquinas redondeadas */
+}
+
+.big-rectangle img {
+    width: 100%; /* Hace que la imagen ocupe el ancho del div */
+    height: 100%; /* Hace que la imagen ocupe el alto del div */
+    object-fit: cover; /* Mantiene la relación de aspecto y recorta si es necesario */
+    position: absolute; /* Permite centrar la imagen */
+    top: 50%; /* Mueve la imagen hacia abajo */
+    left: 50%; /* Mueve la imagen hacia la derecha */
+    transform: translate(-50%, -50%); /* Centra la imagen */
+}
+
+
+
+
+
+
+
+
+
+/* Estilo para el contenedor de la imagen */
+.img-box {
+    display: inline-block; /* Asegura que el contenedor se ajuste al contenido */
+    position: relative; /* Necesario para el posicionamiento de la imagen expandida */
+    cursor: pointer; /* Muestra el cursor de mano para indicar que es clickeable */
+   
+
+}
+
+/* Estilo para el contenedor rectangular */
+.maria {
+    width: 120px; /* Define el ancho del rectángulo */
+    height: 100px; /* Define la altura del rectángulo */
+   
+    border-radius: 8px; /* (Opcional) Esquinas redondeadas */
+    position: relative; /* Mantiene el contenedor para la imagen */
+}
+
+/* Estilo para la imagen */
+.maria img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: 100%; /* Ajusta la altura de la imagen al 100% del contenedor */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s ease; /* Suaviza la transición del cambio de tamaño */
+    border: 3px solid black; /* Agrega un borde negro de 5px */
+
+}
+
+/* Oculta el checkbox */
+.toggle-checkbox {
+    display: none; /* Oculta el checkbox */
+}
+
+/* Agranda la imagen cuando el checkbox está marcado */
+.toggle-checkbox:checked + .image-label .maria img {
+    position: absolute; /* Cambia la posición a absoluta */
+    left: 0; /* Posición desde la izquierda */
+    top: 0; /* Posición desde arriba */
+    transform: scale(2); /* Agranda la imagen en un 250% */
+    z-index: 10; /* Asegura que la imagen se mantenga encima del contenido adyacente */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para el contenedor de la imagen */
+.img-box1 {
+    display: inline-block; /* Asegura que el contenedor se ajuste al contenido */
+    position: relative; /* Necesario para el posicionamiento de la imagen expandida */
+    cursor: pointer; /* Muestra el cursor de mano para indicar que es clickeable */
+   
+
+}
+
+/* Estilo para el contenedor rectangular */
+.maria1 {
+    width: 120px; /* Define el ancho del rectángulo */
+    height: 100px; /* Define la altura del rectángulo */
+   
+    border-radius: 8px; /* (Opcional) Esquinas redondeadas */
+    position: relative; /* Mantiene el contenedor para la imagen */
+    
+    
+}
+
+/* Estilo para la imagen */
+.maria1 img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: 100%; /* Ajusta la altura de la imagen al 100% del contenedor */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s ease; /* Suaviza la transición del cambio de tamaño */
+    transform: translate-Y(-300px); /* Elevar ligeramente el botón */
+    transform: translate-x(-300px); /* Elevar ligeramente el botón */
+    border: 3px solid black; /* Agrega un borde negro de 5px */
+}
+
+/* Oculta el checkbox */
+.toggle-checkbox {
+    display: none; /* Oculta el checkbox */
+}
+
+/* Agranda la imagen cuando el checkbox está marcado */
+.toggle-checkbox:checked + .image-label .maria1 img {
+    position: absolute; /* Cambia la posición a absoluta */
+    left: 0; /* Posición desde la izquierda */
+    top: 0; /* Posición desde arriba */
+    transform: scale(2); /* Agranda la imagen en un 250% */
+    z-index: 10; /* Asegura que la imagen se mantenga encima del contenido adyacente */
+}
+
+
+.rectangle {
+    display: inline-block;
+}
+
+.rectangle i {
+    font-size: 1250px;  /* Ajusta el tamaño del ícono */
+    color: #bb2362;   /* Cambia el color del ícono */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section-sub{
+    border: 5px solid transparent; /* Fondo del borde transparente */
+ 
+    border-image-slice: 1; /* Ajuste del borde al gradiente */
+    padding: 20px; /* Espaciado interior */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del borde para darle un efecto de profundidad */
+    position: relative; /* Posicionamiento para los efectos */
+    overflow: hidden; /* Asegura que el contenido no sobresalga del borde */
+    background-color: white; /* Fondo blanco para el contenido */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  .container22 {
+    display: flex;
+    justify-content: space-between;  /* Alinea los botones a los extremos */
+    width: 100%;  /* Asegura que el contenedor ocupe todo el ancho */
+  }
+  
+  .boton-izquierda {
+    text-align: left;  /* Alinea el botón a la izquierda */
+    margin-left: 245px;
+  }
+  
+  .boton-derecha {
+    text-align: right;  /* Alinea el botón a la derecha */
+margin-right: 240px;
+  }
+  
+  .b4 {
+    padding: 10px 20px;
+    background-color: #2136d0; /* Fondo verde */
+    color: white;  /* Texto blanco */
+    text-decoration: none;  /* Sin subrayado */
+    border-radius: 5px;  /* Bordes redondeados */
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;  /* Animación suave */
+  }
+  
+  .b4:hover {
+    background-color: #ac2293; /* Cambia el color de fondo al pasar el mouse */
+    color: white;  /* Texto blanco */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+.play-button1 {
+    background-color: #10cf16; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 15px; /* Bordes más redondeados */
+    padding: 12px 25px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como un bloque en línea */
+    font-size: 17px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+    text-shadow: 
+    -1px -1px 0 rgb(0, 0, 0),
+    1px -1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(0, 0, 0),
+    1px 1px 0 rgb(0, 0, 0);
+    
+}
+
+/* Efecto al pasar el ratón */
+.play-button1:hover {
+    background-color: #2f32f1; /* Color de fondo al pasar el ratón */
+    transform: translateY(-3px); /* Elevar ligeramente el botón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al pasar el ratón */
+}
+
+
+
+
+
+
+
+.container8 {
+    display: flex; /* Activar Flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente si el contenedor tiene altura */
+    height: 20vh; /* Altura opcional para centrar verticalmente */
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+.play-button2 {
+    background-color: #db3599; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 15px; /* Bordes más redondeados */
+    padding: 12px 25px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como un bloque en línea */
+    font-size: 17px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+    text-shadow: 
+    -1px -1px 0 rgb(0, 0, 0),
+    1px -1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(0, 0, 0),
+    1px 1px 0 rgb(0, 0, 0);
+    
+}
+
+/* Efecto al pasar el ratón */
+.play-button2:hover {
+    background-color: #31e9f3; /* Color de fondo al pasar el ratón */
+    transform: translateY(-3px); /* Elevar ligeramente el botón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al pasar el ratón */
+}
+
+
+
+
+
+
+
+.container7 {
+    display: flex; /* Activar Flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente si el contenedor tiene altura */
+    height: 20vh; /* Altura opcional para centrar verticalmente */
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.boton1 {
+    text-align: center; /* Centrar el contenido dentro del div */
+   margin-top: 1px;
+}
+
+.b42 {
+    display: inline-block; /* Permitir el uso de padding y margin */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #5cd2fa; /* Color de fondo inicial */
+    color: rgb(0, 0, 0); /* Color del texto */
+    text-decoration: none; /* Quitar subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Suavizar la transición del color */
+}
+
+.b42:hover {
+    background-color: #49f46b; /* Color de fondo al pasar el mouse */
+    color: rgb(0, 0, 0); /* Color del texto */
+}

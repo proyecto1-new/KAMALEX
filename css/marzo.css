@@ -1,0 +1,622 @@
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+    border: 2px solid black; /* Borde negro */
+    border-radius: 50%; /* Bordes redondeados */
+    background-color: white; /* Fondo blanco para las flechas */
+    width: 40px; /* Ancho de la flecha */
+    height: 40px; /* Alto de la flecha */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover {
+    background-color: #f0f0f0; /* Cambio de color al pasar el mouse */
+}
+
+
+
+
+
+
+.header-margin {
+    margin-top: 38px; /* Ajusta el margen superior según lo necesites */
+    margin-bottom: 35px; /* Ajusta el margen inferior según lo necesites */
+    margin-left: 45px; /* Ajusta el margen izquierdo según lo necesites */
+    margin-right: 45px; /* Ajusta el margen derecho según lo necesites */
+}
+
+.text-margin-paragraph-1 {
+    margin-top: 15px; /* Ajusta el margen superior según lo necesites */
+    margin-bottom: 10px; /* Ajusta el margen inferior según lo necesites */
+    margin-left: 45px; /* Ajusta el margen izquierdo según lo necesites */
+    margin-right: 45px; /* Ajusta el margen derecho según lo necesites */
+}
+
+.text-margin-paragraph-2 {
+    margin-top: 20px; /* Ajusta el margen superior según lo necesites */
+    margin-bottom: 15px; /* Ajusta el margen inferior según lo necesites */
+    margin-left: 45px; /* Ajusta el margen izquierdo según lo necesites */
+    margin-right: 45px; /* Ajusta el margen derecho según lo necesites */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.text-margin-paragraph-3 {
+    margin-top: 25px; /* Ajusta el margen superior según lo necesites */
+    margin-bottom: 2px; /* Ajusta el margen inferior según lo necesites */
+    margin-left: 45px; /* Ajusta el margen izquierdo según lo necesites */
+    margin-right: 45px; /* Ajusta el margen derecho según lo necesites */
+}
+
+
+
+.text-margin-list-item {
+    margin-top: 15px; /* Ajusta el margen superior según lo necesites */
+    margin-bottom: 15px; /* Ajusta el margen inferior según lo necesites */
+    margin-left: 45px; /* Ajusta el margen izquierdo según lo necesites */
+    margin-right: 45px; /* Ajusta el margen derecho según lo necesites */
+}
+
+
+
+
+
+
+
+.text-margin-heading {
+    margin-top: 20px; /* Ajusta el margen superior según lo necesites */
+    margin-bottom: 35px; /* Ajusta el margen inferior según lo necesites */
+    margin-left: 45px; /* Ajusta el margen izquierdo según lo necesites */
+    margin-right: 45px; /* Ajusta el margen derecho según lo necesites */
+}
+
+
+
+
+
+
+.button-wrapper {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    align-items: center;     /* Centra el botón verticalmente (si es necesario) */
+    height: 100%;            /* Ajusta la altura del contenedor si es necesario */
+    width: 100%;             /* Asegúrate de que el contenedor ocupe todo el ancho disponible */
+  }
+
+  .btn-neon {
+    background-color: #ff00ff; /* Color de fondo rosado neón */
+    border:3px solid #00ff00; /* Borde verde neón */
+    color: white; /* Color del texto */
+   
+    padding: 10px 20px; /* Ajusta el tamaño del botón si es necesario */
+    font-size: 16px; /* Ajusta el tamaño del texto si es necesario */
+    border-radius: 5px; /* Añade bordes redondeados si es necesario */
+  }
+
+  .btn-neon:hover {
+    background-color: #e600e6; /* Fondo rosado neón un poco más oscuro para el hover */
+  }
+
+
+
+
+
+
+  .custom-margin {
+    margin-top: 20px;    /* Margen superior */
+    margin-right: 10px;  /* Margen derecho */
+    margin-bottom: 0px; /* Margen inferior */
+    margin-left: 75px;   /* Margen izquierdo */
+  }
+
+
+
+
+
+
+
+
+  .custom-img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px; /* Borde redondeado */
+    border: 4px solid rgb(255, 55, 165); /* Borde beige */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    background-color: #f8f9fa; /* Fondo claro */
+    transition: border-color 0.3s ease; /* Transición suave para el color del borde */
+  }
+
+  .custom-img-container img {
+    border-radius: 15px; /* Borde redondeado para la imagen también */
+    transition: transform 0.3s ease; /* Transición suave para el hover */
+  }
+
+  .custom-img-container:hover {
+    border-color: #9b59b6; /* Borde morado al pasar el mouse */
+  }
+
+  .custom-img-container:hover img {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+  }
+
+  .custom-img-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 20px); /* Ajusta el ancho del contenedor */
+    text-align: center;
+    color: #000; /* Color del texto */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    z-index: 1; /* Asegúrate de que el texto esté encima de otros elementos */
+  }
+
+
+
+
+
+
+
+
+  .image-border img {
+    border: 5px solid black; /* Borde negro */
+    box-shadow: 0 0 0 5px white; /* Borde blanco */
+    transition: transform 0.3s; /* Suaviza la animación */
+}
+
+.image-border img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+}
+
+
+
+
+
+
+
+
+
+
+.bordered-container {
+    border: 3px solid #7FFFD4; /* Color verde agua */
+    padding: 3px; /* Espaciado interno */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.oval-border {
+    background-color: rgba(186, 85, 211, 0.3); /* Color morado claro */
+    border-radius: 50%; /* Hace que sea ovalado */
+    padding: 40px; /* Espaciado interno */
+    display: inline-block; /* Hace que el fondo se ajuste al contenido */
+}
+
+.d-flex {
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.text-center {
+    text-align: center; /* Asegura que el texto esté centrado */
+}
+
+
+
+
+
+
+
+
+
+.col-lg-7 {
+    border: 4px solid #007bff; /* Color del borde */
+    border-radius: 0; /* Sin esquinas redondeadas */
+    padding: 15px; /* Espacio interior */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra del cuadro */
+    background-color: white; /* Color de fondo */
+}
+
+.bg-light {
+    background-color: #f8f9fa; /* Color de fondo claro */
+}
+
+
+
+
+
+/* Para el primer contenedor */
+.container-1-with-border {
+    position: relative; /* Necesario para posicionar la línea */
+    border: 6px solid #80ff67; /* Color del borde gris claro */
+    border-radius: 8px; /* Esquinas redondeadas */
+    padding: 20px; /* Espaciado interno */
+    background-color: #ffffff; /* Color de fondo blanco */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 10px 0; /* Espaciado externo */
+}
+
+.container-1-with-border::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px; /* Grosor de la línea */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra de la línea */
+}
+
+/* Para el segundo contenedor */
+.container-2-with-border {
+    position: relative; /* Necesario para posicionar la línea */
+    border: 2px solid #dcdcdc; /* Color del borde gris claro */
+    border-radius: 8px; /* Esquinas redondeadas */
+    padding: 20px; /* Espaciado interno */
+    background-color: #ffffff; /* Color de fondo blanco */
+    margin: 10px 0; /* Espaciado externo */
+}
+
+.container-2-with-border::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px; /* Grosor de la línea */
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    align-items: center; /* Centra el botón verticalmente, opcional */
+    height: 10vh; /* Altura del contenedor, opcional para centrar verticalmente */
+}
+
+.neon-button {
+    display: inline-block;
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    color: #fff; /* Color del texto */
+    background-color: #ff9d00; /* Rojo neón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transición suave para color, transformación y sombra */
+    box-shadow: 0 0 10px rgba(255, 45, 0, 0.6); /* Sombra de color rojo neón */
+}
+
+.neon-button:hover {
+    background-color: #33FFFF; /* Cian neón en hover */
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+    box-shadow: 0 0 15px rgba(51, 255, 255, 0.8); /* Aumento de la sombra en hover */
+}
+
+.neon-button:active {
+    background-color: #FF00FF; /* Magenta neón más brillante al hacer clic */
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.9); /* Aumento de la sombra al hacer clic */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bordered-box {
+    border: 2px solid #000; /* Borde negro */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    margin: 20px 0; /* Margen superior e inferior */
+    background-color: #f9f9f9; /* Color de fondo suave */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center !important; /* Asegura que el botón esté centrado horizontalmente */
+    align-items: center !important; /* Opcional para centrar verticalmente */
+    height: 18vh; /* Ajusta esto según sea necesario para el alto del contenedor */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+.nueva-clase-boton {
+    display: inline-block;
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    color: #fff; /* Color del texto */
+    background-color: #FF1493; /* Rosa neón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transición suave para color, transformación y sombra */
+    box-shadow: 0 0 10px rgba(255, 20, 147, 0.6); /* Sombra de color rosa neón */
+}
+
+.nueva-clase-boton:hover {
+    background-color: #4dff00; /* Azul neón en hover */
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.8); /* Aumento de la sombra en hover */
+}
+
+.nueva-clase-boton:active {
+    background-color: #8A2BE2; /* Morado neón al hacer clic */
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.9); /* Aumento de la sombra al hacer clic */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.centered-title {
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.green {
+    color: rgb(34, 248, 127); /* Aplica el color verde al texto dentro del span */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.theater-container {
+    width: 98%; /* Ancho del contenedor, ajusta según necesites */
+    max-width: 1250px; /* Máximo ancho para pantallas grandes */
+    border: 4px solid #3cff1a; /* Color del borde */
+    border-radius: 30px; /* Esquinas redondeadas */
+    padding: 75px; /* Espaciado interno */
+    background-color: #ffffff; /* Color de fondo blanco */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 8px auto; /* Espaciado externo y centrado */
+}
+
+
+
+
+
+
+
+
+
+
+
+.title-background {
+    background-color: #feffc0; /* Color de fondo deseado */
+    padding: 10px 20px; /* Espaciado interno más pequeño */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    display: inline-block; /* Ajusta el tamaño al contenido */
+}
+
+.title-background h2 {
+    font-size: 58px; /* Ajusta el tamaño de la letra aquí */
+    margin: 0; /* Elimina márgenes por defecto del h2 */
+}
+
+.title-container {
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.justified-text {
+    text-align: justify; /* Justifica el texto */
+    color: black; /* Color del texto */
+    font-size: 17px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.dynamic-image {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.dynamic-image img {
+    width: 350px;
+    height: 210px;
+    border-radius: 15px;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.dynamic-image:hover img {
+    transform: scale(1.15) translateY(-10px) rotate(3deg);
+    filter: brightness(1.8) saturate(1.3);
+}
+
+.dynamic-image:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    ;
+    box-shadow: 
+        0 0 30px rgba(255, 223, 0, 0.9),
+        0 0 50px rgba(255, 255, 255, 1),
+       ;
+    opacity: 0.8;
+    transition: opacity 0.5s ease;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+

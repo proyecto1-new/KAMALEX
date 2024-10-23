@@ -1,0 +1,483 @@
+/* Estilos generales para el contenedor */
+.tabs-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  /* Estilos para la navegación en forma vertical */
+  .nav.tab-nav {
+    display: flex;
+    flex-direction: column;
+    width: 150px; /* Ajusta el tamaño según lo necesites */
+    margin-right: 20px; /* Espacio entre el menú y el contenido */
+    margin-top: 100px; /* Ajusta el margen superior según lo necesites */
+    height: 350px;
+
+  }
+  
+  /* Estilo de los elementos */
+  .nav.tab-nav .item {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo de los enlaces para que sean cuadrados */
+  .nav.tab-nav .link {
+    display: block;
+    padding: 15px;
+    background-color: #f0f0f0; /* Color por defecto */
+    border: 2px solid #ccc;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    color: #333;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para el cambio de color */
+  }
+  
+  /* Cuando la pestaña está activa */
+  .nav.tab-nav .link.active {
+    background-color: #34c939; /* Color cuando está activa */
+    color: white;
+  }
+  
+  /* Efecto hover */
+  .nav.tab-nav .link:hover {
+    background-color: #ddd;
+  }
+  
+  /* Estilos para el contenido de las pestañas */
+  .tab-content {
+    flex: 1;
+  }
+  
+  /* Ajusta el estilo del contenido dentro de cada pestaña */
+  .tab-pane {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+
+
+  .tab-pane {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 440px; /* Ajusta esta altura según lo necesites */
+    overflow: auto; /* Permite que el contenido excedente se desplace */
+}
+
+
+
+
+
+
+
+  #dynamic-image {
+      width:500px; /* Ajusta el ancho al 100% del contenedor */
+      height: 300px; /* Mantiene la proporción de la imagen */
+      margin-right: 155px; /* Ajusta el margen derecho según lo necesites */
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .service_section {
+    background-size: cover; /* Asegúrate de que la imagen cubra toda la sección */
+    background-position: center; /* Centra la imagen de fondo */
+    position: relative;
+    color: white; /* Color del texto en toda la sección */
+}
+
+.container3 {
+    position: relative;
+    z-index: 1; /* Asegúrate de que sea mayor que el z-index de la imagen */
+    padding: 35px; /* Espacio interno para el texto */
+}
+
+
+.tab-pane {
+
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.title {
+    margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Color del botón */
+    border-color: #007bff; /* Color del borde */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Color del botón al pasar el mouse */
+}
+
+.tower {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-hover {
+  border: 5px solid rgb(65, 216, 65); /* Borde verde */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra solo en la parte inferior */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, opacity 0.3s ease; /* Transiciones suaves */
+  display: block; /* Asegura que la imagen se comporte como un bloque */
+}
+
+.image-hover:hover {
+  transform: scale(1.2) translateY(-15px) rotate(5deg); /* Aumenta de tamaño, se mueve hacia arriba y rota */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7); /* Sombra más pronunciada */
+  filter: brightness(1.2) saturate(1.2); /* Aumenta el brillo y la saturación */
+  opacity: 0.9; /* Hace que la imagen sea un poco más translúcida */
+  border: 5px solid #ffcc00; /* Cambia el borde a un color dorado */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.text-center {
+  text-align: center; /* Centra el contenido dentro del div */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.neon-button {
+  position: absolute; /* Fija el botón en una posición absoluta */
+  top: 105%; /* Ajusta este valor para moverlo hacia abajo o arriba */
+  left: 50%; /* Mantenlo en el centro horizontalmente */
+  transform: translate(-50%, 0); /* Centra el botón solo horizontalmente */
+  display: inline-block;
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  color: #fff; /* Color del texto */
+  background-color: #2ccc32; /* Verde neón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Esquinas redondeadas */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Sin subrayado */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transición suave para color, transformación y sombra */
+  box-shadow: 0 0 10px rgba(26, 202, 32, 0.862); /* Sombra de color verde neón */
+}
+
+
+
+
+.neon-button:hover {
+  background-color: #fc5757; /* Cambia el color al pasar el mouse */
+  color: #fff; /* Mantiene el color del texto blanco */
+
+}
+
+
+
+
+
+
+
+
+
+
+.neon-button1 {
+  top: 90%; /* Ajusta este valor para moverlo hacia abajo o arriba */
+  display: inline-block;
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  color: #fff; /* Color del texto */
+  background-color: #9b00a6; /* Verde neón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Esquinas redondeadas */
+  text-decoration: none; /* Sin subrayado */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transición suave para color, transformación y sombra */
+  box-shadow: 0 0 10px rgba(26, 202, 32, 0.862); /* Sombra de color verde neón */
+  margin-right: 200px; /* Ajusta este valor según sea necesario */
+  margin-top: 50px;
+  margin-left: 230px;
+}
+
+.neon-button1:hover {
+  background-color: #92dcff; /* Cambia el color al pasar el mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Muestra las flechas de navegación en la parte superior */
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: -85px; /* Ajusta según sea necesario */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* Asegura que las flechas estén por encima */
+  margin-bottom: 2500px; /* Ajusta este valor para el margen inferior que desees */
+}
+
+
+
+
+
+
+
+
+.owl-nav button {
+  background: transparent;
+  border: none;
+  font-size: 24px; /* Ajusta según sea necesario */
+}
+
+
+
+
+
+
+.m-0 {
+
+  text-align: justify; /* Justifica el texto */
+  margin-top: 0px; /* Ajusta el margen superior según lo necesites */
+  margin-bottom: 15px; /* Ajusta el margen inferior según lo necesites */
+  margin-left: 15px; /* Ajusta el margen izquierdo según lo necesites */
+  margin-right: 15px; /* Ajusta el margen derecho según lo necesites */
+}
+
+
+
+
+
+.btn-custom {
+  background-color: #2afae1; /* Color verde neón */
+  color: black; /* Color del texto */
+  padding: 8px 15px; /* Ajusta el padding */
+  border: 3px solid black; /* Borde negro */
+  border-radius: 15px; /* Bordes redondeados */
+  margin-left: 65px; /* Margen izquierdo */
+  text-decoration: none; /* Elimina el subrayado */
+  display: inline-block; /* Asegura que el margen izquierdo funcione */
+  box-shadow: 0 4px 10px rgba(0, 255, 20, 0.6); /* Sombra para un efecto de profundidad */
+  transition: all 0.3s ease; /* Transición suave para el hover */
+}
+
+.btn-custom:hover {
+  background-color: #00ffcc; /* Color de fondo al pasar el cursor */
+  color: white; /* Cambia el color del texto */
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.8), 0 0 30px rgba(57, 255, 20, 0.8); /* Brillo neón al hacer hover */
+  border-color: #ffffff; /* Cambia el color del borde al hacer hover */
+}
+
+
+
+.container-fluid2 {
+  background-color: hsl(210, 15%, 95%); /* Gris claro */
+  padding: 40px 0; /* Espaciado superior e inferior */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+.container2 {
+  max-width: 120px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor */
+  background-color: white; /* Fondo blanco para el contenido */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto profesional */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bordered-container {
+  background-color: rgb(67, 0, 154); /* Fondo blanco */
+  border: 2px solid hsl(210, 33%, 1%); /* Borde claro */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 15px; /* Espaciado interno */
+  margin: 20px 0; /* Margen externo */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+    border: 2px solid black; /* Borde negro */
+    border-radius: 50%; /* Bordes redondeados */
+    background-color: white; /* Fondo blanco para las flechas */
+    width: 40px; /* Ancho de la flecha */
+    height: 40px; /* Alto de la flecha */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover {
+    background-color: #f0f0f0; /* Cambio de color al pasar el mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.border-box {
+  flex: 1 1 200px; /* Ajusta el valor para definir el ancho mínimo */
+  height: 500px; /* Ajusta la altura deseada */
+
+  border: 2px solid #000; /* Borde alrededor */
+ 
+}
+
+
+
+
+
+
+
+
+.icon-box img {
+  width: 150px; /* Ancho fijo para la imagen */
+  height: auto; /* Mantener la proporción */
+  border: none; /* Sin borde */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.zoomable {
+  transition: transform 0.3s ease; /* Transición suave */
+  cursor: pointer; /* Cambiar cursor al pasar el mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,410 @@
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: visible; /* Permite que el brillo se extienda fuera del contenedor */
+}
+
+.enhanced-image {
+    max-width: 650px;
+    height: auto;
+    border: 5px solid #000; /* Color y grosor del borde */
+    transition: transform 0.3s ease-in-out; /* Transición suave para el acercamiento */
+}
+
+.bright-effect {
+    position: absolute;
+    top: -15px; /* Extiende el brillo hacia arriba */
+    left: -15px; /* Extiende el brillo hacia la izquierda */
+    width: calc(100% + 30px); /* Aumenta el ancho para cubrir más área */
+    height: calc(100% + 30px); /* Aumenta la altura para cubrir más área */
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    z-index: 1;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.8) 0%, rgba(255, 215, 0, 0) 70%),
+                radial-gradient(circle, rgba(192, 192, 192, 0.8) 0%, rgba(192, 192, 192, 0) 70%),
+                radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+    filter: blur(12px); /* Aumenta el desenfoque para un brillo más difuso */
+}
+
+.bright-effect::before, .bright-effect::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(192, 192, 192, 0.8) 0%, rgba(192, 192, 192, 0) 70%); /* Círculos plateados */
+    pointer-events: none;
+}
+
+.bright-effect::before {
+    top: -30px;
+    left: -30px;
+    width: 60px;
+    height: 60px;
+    filter: blur(8px);
+}
+
+.bright-effect::after {
+    bottom: -30px;
+    right: -30px;
+    width: 60px;
+    height: 60px;
+    filter: blur(8px);
+}
+
+@keyframes shine {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.8); /* Aumenta la escala para que el brillo se expanda más */
+    }
+}
+
+.enhanced-image-container:hover .bright-effect {
+    opacity: 1; /* Muestra el brillo cuando el mouse está sobre la imagen */
+    animation: shine 1s forwards; /* Aplica la animación del brillo */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.highlighted-section {
+    border: 5px solid transparent; /* Fondo del borde transparente */
+    border-image: linear-gradient(45deg, neon-green, neon-yellow, neon-green); /* Gradiente diagonal con verde neón y amarillo neón */
+    border-image-slice: 1; /* Ajuste del borde al gradiente */
+    padding: 20px; /* Espaciado interior */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra del borde para darle un efecto de profundidad */
+    position: relative; /* Posicionamiento para los efectos */
+    overflow: hidden; /* Asegura que el contenido no sobresalga del borde */
+    background-color: white; /* Fondo blanco para el contenido */
+}
+
+/* Colores para el borde con verde y amarillo neón */
+:root {
+    --neon-green: #39FF14; /* Verde neón */
+    --neon-yellow: #FFFF33; /* Amarillo neón */
+}
+
+.highlighted-section::before {
+    content: ""; /* Crea un pseudo-elemento para el efecto de brillo */
+    position: absolute;
+    top: -10px; /* Ajusta la posición del brillo */
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)); /* Brillo suave */
+    z-index: 0; /* Coloca el brillo detrás del contenido */
+    border-radius: 15px; /* Igual que el contenedor para mantener el brillo en las esquinas redondeadas */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    align-items: center; /* Centra el botón verticalmente, opcional */
+    height: 10vh; /* Altura del contenedor, opcional para centrar verticalmente */
+  }
+  
+  .neon-button {
+    display: inline-block;
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    color: #fff; /* Color del texto */
+    background-color: #39FF14; /* Verde neón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transición suave para color, transformación y sombra */
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.6); /* Sombra de color verde neón */
+  }
+  
+  .neon-button:hover {
+    background-color: #FFFF33; /* Amarillo neón en hover */
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+    box-shadow: 0 0 15px rgba(255, 255, 51, 0.8); /* Aumento de la sombra en hover */
+  }
+  
+  .neon-button:active {
+    background-color: #00FF00; /* Verde neón más brillante al hacer clic */
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.9); /* Aumento de la sombra al hacer clic */
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .testimonial-carousel .content {
+    margin-bottom: 30px; /* Ajusta el valor según el espacio que desees */
+}
+
+
+
+
+
+
+
+
+
+
+
+.text-justify {
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.month-title {
+    color: #2FF75F !important; /* Verde neón ligeramente más suave */
+    font-weight: bold !important; /* Texto en negrita */
+    font-size: 1.8rem !important; /* Tamaño de fuente más grande */
+}
+
+
+
+
+
+
+
+
+
+
+
+.header-month {
+    color: #BF00FF !important; /* Morado neón */
+    font-weight: bold !important; /* Texto en negrita */
+    font-size: 2rem !important; /* Tamaño de fuente más grande (ajustar si es necesario) */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contenedor de la imagen */
+.custom-image-container {
+    width: 100%; /* Ajusta el ancho del contenedor de la imagen al 100% del contenedor padre */
+    max-width: 320px; /* Ajusta el ancho máximo del contenedor de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: flex; /* Usa flexbox para alinear la imagen dentro del contenedor */
+    justify-content: flex-end; /* Alinea la imagen a la derecha dentro del contenedor */
+    margin-left: auto; /* Permite que el contenido textual ocupe el espacio restante a la izquierda */
+}
+
+/* Imagen dentro del contenedor */
+.custom-image {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados en la imagen */
+}
+
+/* Ajusta el margen del contenido textual */
+.custom-text-content {
+    flex: 1; /* Permite que el contenido textual ocupe el espacio restante */
+    margin-right: 45px; /* Ajusta el margen a la derecha del contenido textual para separarlo de la imagen */
+}
+
+/* Contenedor de la imagen con diseño */
+.custom-image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Mantiene la imagen dentro del contenedor */
+    padding: 10px;
+    background-color: black; /* Fondo negro interno */
+    border-radius: 20px; /* Bordes redondeados */
+    border: 5px solid transparent; /* Borde transparente para los colores */
+    box-shadow: 0px 0px 10px rgba(255, 255, 0, 0.6), /* Sombra con color amarillo brillante */
+                0px 0px 20px rgba(192, 192, 192, 0.6); /* Sombra con color plateado */
+    background-image: linear-gradient(white, white), /* Fondo blanco por defecto */
+                      linear-gradient(to top left, #ffd1dc, transparent), /* Fondo pastel rosa en la esquina superior izquierda */
+                      linear-gradient(to bottom right, #b2f2bb, transparent); /* Fondo pastel verde en la esquina inferior derecha */
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+/* Imagen dentro del contenedor */
+.custom-image {
+    display: block;
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: 100%; /* Ajusta la altura de la imagen al 100% del contenedor */
+    object-fit: cover; /* Mantiene la proporción de la imagen y la recorta para llenar el contenedor */
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Efecto al pasar el ratón o tocar */
+.custom-image-container:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del contenedor al pasar el ratón */
+    box-shadow: 0px 0px 15px rgba(255, 255, 0, 0.9), /* Aumenta la sombra amarilla brillante */
+                0px 0px 25px rgba(192, 192, 192, 0.8); /* Mantiene la sombra plateada */
+}
+
+/* Colores en las esquinas */
+.custom-image-container::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 20px;
+    height: 20px;
+    background-color: #00ff00; /* Verde fluorescente */
+    border-top-left-radius: 20px;
+}
+
+.custom-image-container::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    background-color: #ff00ff; /* Rosa fluorescente */
+    border-bottom-right-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el párrafo */
+.carnaval-description {
+    text-align: justify; /* Justifica el texto */
+    font-size: 18px; /* Tamaño de la fuente */
+    line-height: 1.8; /* Altura de línea para el espaciado */
+}
+
+
+
+
+
+
+
+
+/* Contenedor principal para el párrafo */
+.carnaval-description-container {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f4f4f4; /* Color de fondo base */
+    border: 2px solid #3d2b1f; /* Bordes de color marrón oscuro */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+    overflow: hidden; /* Para asegurar que las decoraciones no sobresalgan del contenedor */
+}
+
+/* Estilos para el párrafo dentro del contenedor */
+.carnaval-description {
+    text-align: justify; /* Justifica el texto */
+    font-size: 18px; /* Tamaño de la fuente */
+    line-height: 1.6; /* Altura de línea para el espaciado */
+    color: #3d2b1f; /* Color de texto que contraste con el fondo */
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente para mejorar la legibilidad del texto */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados en el fondo del texto */
+    position: relative; /* Para aplicar efectos decorativos */
+    z-index: 1; /* Asegura que el texto esté por encima de los efectos decorativos */
+}
+
+/* Fondo animado con efecto de ladrillo */
+.carnaval-description-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('ladrillo.jpg') repeat; /* Imagen de fondo de ladrillo */
+    background-size: cover; /* Asegura que la imagen cubra el contenedor */
+    opacity: 0.3; /* Ajusta la opacidad para no sobrecargar el contenido */
+    z-index: 0; /* Coloca la imagen de fondo detrás del texto */
+}
+
+/* Decoración animada para el contenedor */
+.carnaval-description-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #3d2b1f; /* Bordes de color marrón oscuro */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4); /* Sombra interna para profundidad */
+    transform: rotate(-2deg); /* Rotación ligera para un efecto más dinámico */
+    animation: move 6s ease-in-out infinite; /* Animación de movimiento */
+    z-index: 1; /* Coloca el efecto decorativo sobre el fondo */
+}
+
+/* Animación de movimiento */
+@keyframes move {
+    0% {
+        transform: rotate(-2deg) translateY(0);
+    }
+    50% {
+        transform: rotate(2deg) translateY(10px);
+    }
+    100% {
+        transform: rotate(-2deg) translateY(0);
+    }
+}

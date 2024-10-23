@@ -1,0 +1,232 @@
+.bg-pricing {
+    background-image: url('../img/campesino.jpg'); /* Ruta relativa a la imagen */
+    background-size: cover; /* Cubre toda el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 90px 0; /* Espacio vertical */
+    height: 1100px;
+    background-color: #F6D1D1;
+}
+
+
+
+
+
+/* Pricing Text */
+.pricing-text {
+  
+    border-radius: 100px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+
+
+
+
+.bt-custom {
+    display: block; /* Para centrar el botón */
+    width: 180px; /* Ajusta el ancho según sea necesario */
+    margin: 0 auto; /* Centrar horizontalmente */
+    background-color: #6c757d; /* Color de fondo inicial */
+    color: white; /* Color de texto */
+    text-align: center; /* Centrar texto */
+    padding: 10px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.bt-custom:hover {
+    background-color: #5a6268; /* Color de fondo al pasar el mouse */
+    color: white; /* Mantener el color de texto blanco */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.centered-heading {
+    color: white;
+    margin: 0; /* Elimina márgenes para evitar saltos de línea */
+}
+
+
+
+
+
+
+.zoom-image {
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.zoom-image:hover {
+    transform: scale(2.5); /* Aumenta al 250% */
+}
+
+@keyframes hold {
+    0% {
+        transform: scale(2.5); /* Mantiene el tamaño aumentado */
+    }
+    100% {
+        transform: scale(1); /* Regresa al tamaño original */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.neon-button1 {
+    top: 90%; /* Ajusta este valor para moverlo hacia abajo o arriba */
+    display: inline-block;
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    color: #000000; /* Color del texto */
+    background-color: #e3f020; /* Verde neón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transición suave para color, transformación y sombra */
+    box-shadow: 0 0 10px rgba(26, 202, 32, 0.862); /* Sombra de color verde neón */
+    margin-right: 200px; /* Ajusta este valor según sea necesario */
+    margin-top: 0px;
+    margin-left: 500px;
+  }
+  
+  .neon-button1:hover {
+    background-color: #52ff78; /* Cambia el color al pasar el mouse */
+    color: #000000; /* Color del texto */
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .title-container {
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+.title-background {
+    background-image: url('../img/cfondos.jpeg'); /* Ruta relativa a la imagen */
+    padding: 10px 20px; /* Espaciado interno más pequeño */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-bottom: -3px; /* Espacio debajo del título */
+    display: block; /* Cambiado a block para ocupar todo el ancho */
+    width: 100%; /* Asegura que ocupe el 100% del contenedor */
+    text-align: center; /* Centra el texto horizontalmente */
+    border-bottom: 5px solid rgb(255, 255, 255); /* Borde blanco en la parte inferior */
+}
+
+.title-background h2 {
+    font-size: 58px; /* Ajusta el tamaño de la letra aquí */
+    margin: 0; /* Elimina márgenes por defecto del h2 */
+}
+
+
+
+
+
+
+
+
+
+.centered-title {
+    color: white; /* Cambia el color del texto a blanco */
+    text-align: center; /* Centra el texto */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.neon-button2 {
+    top: 90%; /* Ajusta este valor para moverlo hacia abajo o arriba */
+    display: inline-block;
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    color: #ffffff; /* Color del texto */
+    background-color: #565b0f; /* Verde neón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transición suave para color, transformación y sombra */
+    box-shadow: 0 0 10px rgba(33, 47, 33, 0.862); /* Sombra de color verde neón */
+    margin-right: 200px; /* Ajusta este valor según sea necesario */
+    margin-top: 0px;
+    margin-left: 700px;
+  }
+  
+  .neon-button2:hover {
+    background-color: #600c0c; /* Cambia el color al pasar el mouse */
+    color: #ffffff; /* Color del texto */
+  }
+  

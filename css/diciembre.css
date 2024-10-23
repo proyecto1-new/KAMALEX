@@ -1,0 +1,266 @@
+.special {
+    border: 1px solid black; /* Borde externo */
+    padding: 10px; /* Espacio interno */
+   
+}
+
+
+.nav-tabs {
+    justify-content: center; /* Centra las pestañas */
+}
+
+.nav-tabs > li {
+    display: inline-block;
+}
+
+.nav-tabs > li > a {
+    border: 2px solid #ccc; /* Borde del cuadro */
+    border-radius: 0; /* Sin bordes redondeados */
+    background-color: #fff; /* Fondo blanco */
+    color: #333; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    user-select: none; /* Evita la selección de texto */
+}
+
+.nav-tabs > li.active > a {
+    background-color: #fff; /* Mantener el fondo blanco cuando está activo */
+    color: #333; /* Mantener el color del texto */
+}
+
+.nav-tabs > li.active > a:hover {
+    background-color: #bbb; /* Fondo gris al pasar el cursor sobre la pestaña activa */
+    color: #fff; /* Cambiar el color del texto al pasar el cursor */
+}
+
+.nav-tabs > li > a:hover {
+    background-color: #bbb; /* Fondo gris al pasar el cursor */
+    color: #fff; /* Color del texto al pasar el cursor */
+}
+
+/* Para agregar un pequeño espacio entre las pestañas */
+.nav-tabs > li {
+    margin: 0 5px; /* Espacio horizontal entre pestañas */
+}
+
+
+
+
+
+
+
+
+
+
+.img-custom {
+    width: 380px; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: 300px; /* Mantiene la proporción de la imagen */
+   
+    margin: 0 auto; /* Centra la imagen si el contenedor es más ancho */
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    
+    margin-top: 35px; /* Espaciado superior */
+    
+ 
+    border-radius: 10px; /* (Opcional) Agrega bordes redondeados */
+    border: 5px solid purple; /* Agrega un borde morado de 5px */
+}
+
+
+
+
+
+
+
+
+
+.tab {
+    border: 5px solid; /* Define el grosor del borde */
+    border-image: linear-gradient(to right, #FF5733, #FFBD33, #33FF57) 1; /* Degradado de colores */
+    border-radius: 15px; /* (Opcional) Bordes redondeados */
+ 
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con algo de transparencia */
+    height: 380px;
+}
+
+
+
+
+
+
+
+.button-custom1 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #3498db; /* Color inicial del botón */
+    border-radius: 8px;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s; /* Animación suave para el cambio de color y tamaño */
+    ; text-shadow: 
+            -1px -1px 0 rgb(0, 0, 0),
+            1px -1px 0 rgb(0, 0, 0),
+            -1px 1px 0 rgb(0, 0, 0),
+            1px 1px 0 rgb(0, 0, 0);
+            margin-top: 25px;
+}
+
+.button-custom1:hover {
+    background-color: #16e26b; /* Cambia a verde al pasar el mouse */
+    transform: scale(1.05); /* Agranda el botón ligeramente al pasar el mouse */
+    color: white;
+    ; text-shadow: 
+            -1px -1px 0 rgb(0, 0, 0),
+            1px -1px 0 rgb(0, 0, 0),
+            -1px 1px 0 rgb(0, 0, 0),
+            1px 1px 0 rgb(0, 0, 0);
+}
+
+.button-custom1:active {
+    background-color: #3ce74d; /* Cambia a rojo cuando se hace clic */
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button-container2 {
+    text-align: center; /* Centra el botón en el contenedor */
+    margin-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+.neon-button1 {
+    top: 100%; /* Ajusta este valor para moverlo hacia abajo o arriba */
+    display: inline-block;
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    color: #ffffff; /* Color del texto */
+    background-color: #ff7332; /* Verde neón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transición suave para color, transformación y sombra */
+    box-shadow: 0 0 10px rgba(26, 202, 32, 0.862); /* Sombra de color verde neón */
+
+  }
+  
+  .neon-button1:hover {
+    background-color: #52ff78; /* Cambia el color al pasar el mouse */
+    color: #000000; /* Color del texto */
+  }
+
+
+  
+
+.neon-button5 {
+    top: 100%; /* Ajusta este valor para moverlo hacia abajo o arriba */
+    display: inline-block;
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    color: #ffffff; /* Color del texto */
+    background-color: #ff7332; /* Verde neón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transición suave para color, transformación y sombra */
+    box-shadow: 0 0 10px rgba(26, 202, 32, 0.862); /* Sombra de color verde neón */
+
+  }
+  
+  .neon-button5:hover {
+    background-color: #1ed3b2;; /* Cambia el color al pasar el mouse */
+    color: #000000; /* Color del texto */
+  }
+
+
+
+
+
+
+
+
+
+
+ .boton-container {
+        text-align: center; /* Centrar el contenido del contenedor */
+        margin-top: 20px;  /* Espacio en la parte superior */
+    }
+
+    .boton {
+        display: inline-block; /* Para que el botón respete el padding */
+        background-color: #782098; /* Color de fondo */
+        color: white; /* Color del texto */
+        padding: 10px 20px; /* Espaciado interno */
+        border-radius: 5px; /* Bordes redondeados */
+        text-decoration: none; /* Quitar subrayado */
+        font-size: 16px; /* Tamaño de fuente */
+        transition: background-color 0.3s; /* Efecto de transición */
+    }
+
+    .boton:hover {
+        background-color: #b853bc; /* Color de fondo al pasar el mouse */
+        color: white; /* Color del texto */
+
+    }
+
+
+
+
+
+
+
+
+
+    .button-contai {
+        text-align: center; /* Centra el botón en el contenedor */
+        position: relative; /* Asegura que el elemento se mueva con respecto a su posición original */
+        margin-top: 75px;
+    }
+    
+    .neon-button4 {
+        position: relative; /* Asegura que la posición del botón se pueda ajustar */
+        top: -50px; /* Ajusta este valor para mover el botón hacia arriba */
+        display: inline-block;
+        padding: 10px 20px; /* Espaciado interno */
+        font-size: 16px; /* Tamaño de fuente */
+        font-weight: bold; /* Negrita */
+        color: #ffffff; /* Color del texto */
+        background-color: #225aae; /* Verde neón */
+        border: none; /* Sin borde */
+        border-radius: 5px; /* Esquinas redondeadas */
+        text-decoration: none; /* Sin subrayado */
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transición suave para color, transformación y sombra */
+        box-shadow: 0 0 10px rgba(26, 202, 32, 0.862); /* Sombra de color verde neón */
+    }
+    
+    .neon-button4:hover {
+        background-color: #2fc24f; /* Cambia el color al pasar el mouse */
+        color: #000000; /* Color del texto */
+    }
